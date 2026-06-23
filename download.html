@@ -2,17 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Secure Download Portal</title>
-    <style>body { font-family: monospace; max-width: 650px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }</style>
+    <style>
+        body { 
+            font-family: monospace, Courier, sans-serif; 
+            max-width: 680px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: #fff;
+        }
+        h1 { 
+            line-height: 1.2; 
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            background: #111;
+            color: #fff;
+            padding: 5px 10px;
+        }
+        p { margin: 15px 0; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        hr { border: 0; border-top: 1px dashed #000; margin: 30px 0; }
+        
+        /* Hidden by default, unlocked via JS */
+        .download-box {
+            display: none;
+            border: 2px dashed #000;
+            padding: 20px;
+            margin: 20px 0;
+            background: #fafafa;
+        }
+        
+        .error-box {
+            border: 2px solid #ff0000;
+            padding: 20px;
+            background: #fff5f5;
+            text-align: center;
+        }
+        .btn-download {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .btn-download:hover { background: #333; }
+        .cross-sell-banner {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            background: #fffcc8;
+        }
+    </style>
 </head>
 <body>
-    <h1>Thank You for Your Order.</h1>
-    <p>Your secure download links are active below. Please bookmark this page for your records.</p>
+
+    <h1>System Escape: Secure Delivery Portal</h1>
+    <p>Thank you for your purchase. Your payment has been securely verified by ClickBank. Your customized digital assets are unlocked below.</p>
     
-    <ul>
-        <li><a href="#">Download: The Zero-Bill Power Setup (PDF)</a></li>
-        <li><a href="#">Access: Interactive Solar Sizer Dashboard (Google Sheets Template)</a></li>
-    </ul>
+    <hr>
+
+    <!-- MODULE 1: CHEAP DIRT (ClickBank Item ID: 1) -->
+    <div id="item-1" class="download-box">
+        <h2>🔓 UNLOCKED: Book 1 - Cheap Dirt Ecosystem</h2>
+        <p>Your access links for the land sourcing protocol are active:</p>
+        <ul>
+            <li>
+                <strong>The Core Blueprint:</strong> Cheap Dirt: Find & Buy Unrestricted Land (PDF)<br>
+                <a href="YOUR_CLICKBANK_VAULT_URL_OR_GITHUB_LINK_HERE" class="btn-download">Download PDF Blueprint</a>
+            </li>
+            <li>
+                <strong>The Companion Tool:</strong> The Land Evaluation Matrix (Google Sheets)<br>
+                <a href="YOUR_GOOGLE_SHEETS_SHARE_LINK_HERE" class="btn-download" target="_blank">Access Interactive Matrix</a>
+            </li>
+        </ul>
+        
+        <!-- Cross-selling Book 2 onto the download page of Book 1 -->
+        <div class="cross-sell-banner">
+            <strong>🏠 Next Step Challenge: Got Land? Now Secure Your Power.</strong>
+            <p>Don't spend thousands hiring utility companies to wire your property. Grab <em>The Zero-Bill Power Setup</em> protocol to build a plug-and-play solar grid yourself.</p>
+            <a href="power-offer.html">View the Solar Power Setup Protocol &rarr;</a>
+        </div>
+    </div>
+
+    <!-- MODULE 2: ZERO-BILL POWER (ClickBank Item ID: 2) -->
+    <div id="item-2" class="download-box">
+        <h2>🔓 UNLOCKED: Book 2 - Zero-Bill Power System</h2>
+        <p>Your access links for the solar infrastructure installation manual are active:</p>
+        <ul>
+            <li>
+                <strong>The Core Blueprint:</strong> The Zero-Bill Power Setup Manual (PDF)<br>
+                <a href="YOUR_CLICKBANK_VAULT_URL_OR_GITHUB_LINK_HERE" class="btn-download">Download PDF Manual</a>
+            </li>
+            <li>
+                <strong>The Companion Tool:</strong> Interactive Solar Sizer & Load Calculator (Google Sheets)<br>
+                <a href="YOUR_GOOGLE_SHEETS_SHARE_LINK_HERE" class="btn-download" target="_blank">Access Interactive Sizer</a>
+            </li>
+        </ul>
+
+        <!-- Cross-selling Book 3 onto the download page of Book 2 -->
+        <div class="cross-sell-banner">
+            <strong>💰 Next Step Challenge: Cut the Corporate Income Cord.</strong>
+            <p>Now that your land and power are handling themselves for free, fund your monthly base essentials without a standard job. Secure <em>The $1k Homestead Strategy</em>.</p>
+            <a href="homestead-offer.html">View the Low-Labor Income Strategy &rarr;</a>
+        </div>
+    </div>
+
+    <!-- MODULE 3: $1K HOMESTEAD (ClickBank Item ID: 3) -->
+    <div id="item-3" class="download-box">
+        <h2>🔓 UNLOCKED: Book 3 - The $1k Homestead Strategy</h2>
+        <p>Your access links for the asynchronous off-grid income ledger are active:</p>
+        <ul>
+            <li>
+                <strong>The Core Blueprint:</strong> The $1k Homestead Strategy Ledger (PDF)<br>
+                <a href="YOUR_CLICKBANK_VAULT_URL_OR_GITHUB_LINK_HERE" class="btn-download">Download PDF Ledger</a>
+            </li>
+            <li>
+                <strong>The Companion Tool:</strong> Passive Micro-Revenue Project Planner (Google Sheets)<br>
+                <a href="YOUR_GOOGLE_SHEETS_SHARE_LINK_HERE" class="btn-download" target="_blank">Access Interactive Planner</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- FALLBACK ERROR BOX (Shows only if a user manually navigates here without a receipt parameter) -->
+    <div id="error-box" class="error-box">
+        <h3 style="color: #ff0000; margin-top: 0;">No Active Purchase Verified</h3>
+        <p>This secure deployment page requires an active ClickBank transaction parameter to open your downloads.</p>
+        <p>If you recently purchased an asset and reached this screen in error, please check your email for your direct receipt download link or contact customer support.</p>
+    </div>
+
+    <script>
+        // Simple JavaScript execution to parse ClickBank URL parameters
+        (function() {
+            // Get the parameters from the URL address string
+            const urlParams = new URLSearchParams(window.location.search);
+            const itemId = urlParams.get('item'); // Looks for '?item=X'
+            
+            // Check if an item parameter actually exists
+            if (itemId) {
+                // Find the HTML container that matches the Item ID (e.g., "item-1")
+                const targetModule = document.getElementById('item-' + itemId);
+                
+                if (targetModule) {
+                    // Hide the warning box since a product was validated
+                    document.getElementById('error-box').style.display = 'none';
+                    // Display the verified purchase container
+                    targetModule.style.display = 'block';
+                }
+            }
+        })();
+    </script>
 
 </body>
 </html>
