@@ -22,25 +22,33 @@
         }
         h2 {
             font-size: 18px;
-            margin-top: 20px;
+            margin-top: 25px;
             background: #111;
             color: #fff;
             padding: 5px 10px;
+            margin-bottom: 10px;
         }
         p { margin: 15px 0; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
         hr { border: 0; border-top: 1px dashed #000; margin: 30px 0; }
         
-        /* Hidden by default, unlocked via JS */
-        .download-box {
+        /* Containers hidden by default, revealed dynamically by JS */
+        .asset-section {
             display: none;
-            border: 2px dashed #000;
+            border: 2px solid #000;
             padding: 20px;
             margin: 20px 0;
             background: #fafafa;
         }
-        
+        .upsell-component {
+            display: none;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px dashed #000;
+            background: #fffcc8;
+            padding: 15px;
+        }
         .error-box {
             border: 2px solid #ff0000;
             padding: 20px;
@@ -55,13 +63,11 @@
             display: inline-block;
             font-weight: bold;
             margin-top: 5px;
+            border: 1px solid #000;
         }
-        .btn-download:hover { background: #333; }
-        .cross-sell-banner {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-top: 20px;
-            background: #fffcc8;
+        .btn-download:hover { 
+            background: #fff; 
+            color: #000; 
         }
     </style>
 </head>
@@ -72,108 +78,104 @@
     
     <hr>
 
-    <!-- MODULE 1: CHEAP DIRT (ClickBank Item ID: 1) -->
-    <div id="item-1" class="download-box">
+    <div id="block-b1" class="asset-section">
         <h2>🔓 UNLOCKED: Book 1 - Cheap Dirt Ecosystem</h2>
         <p>Your access links for the land sourcing protocol are active:</p>
         <ul>
             <li>
                 <strong>The Core Blueprint:</strong> Cheap Dirt: Find & Buy Unrestricted Land (PDF)<br>
-                <a href="YOUR_CLICKBANK_VAULT_URL_OR_GITHUB_LINK_HERE" class="btn-download">Download PDF Blueprint</a>
-            </li>
-            <li>
-                <strong>The Companion Tool:</strong> The Land Evaluation Matrix (Google Sheets)<br>
-                <a href="YOUR_GOOGLE_SHEETS_SHARE_LINK_HERE" class="btn-download" target="_blank">Access Interactive Matrix</a>
+                <a href="YOUR_BOOK1_PDF_VAULT_URL" class="btn-download">Download PDF Blueprint</a>
             </li>
         </ul>
-        
-        <!-- Cross-selling Book 2 onto the download page of Book 1 -->
-        <div class="cross-sell-banner">
-            <strong>🏠 Next Step Challenge: Got Land? Now Secure Your Power.</strong>
-            <p>Don't spend thousands hiring utility companies to wire your property. Grab <em>The Zero-Bill Power Setup</em> protocol to build a plug-and-play solar grid yourself.</p>
-            <a href="power-offer.html">View the Solar Power Setup Protocol &rarr;</a>
+
+        <div id="block-s1" class="upsell-component">
+            <strong>🔥 UPGRADE UNLOCKED: The Interactive Land Evaluation Matrix</strong>
+            <p>Your property analysis workspace dashboard is active:</p>
+            <a href="YOUR_GOOGLE_SHEETS_LAND_MATRIX_LINK" class="btn-download" target="_blank">Open Google Sheets Matrix</a>
         </div>
     </div>
 
-    <!-- MODULE 2: ZERO-BILL POWER (ClickBank Item ID: 2) -->
-    <div id="item-2" class="download-box">
+
+    <div id="block-b2" class="asset-section">
         <h2>🔓 UNLOCKED: Book 2 - Zero-Bill Power System</h2>
         <p>Your access links for the solar infrastructure installation manual are active:</p>
         <ul>
             <li>
                 <strong>The Core Blueprint:</strong> The Zero-Bill Power Setup Manual (PDF)<br>
-                <a href="YOUR_CLICKBANK_VAULT_URL_OR_GITHUB_LINK_HERE" class="btn-download">Download PDF Manual</a>
-            </li>
-            <li>
-                <strong>The Companion Tool:</strong> Interactive Solar Sizer & Load Calculator (Google Sheets)<br>
-                <a href="YOUR_GOOGLE_SHEETS_SHARE_LINK_HERE" class="btn-download" target="_blank">Access Interactive Sizer</a>
+                <a href="YOUR_BOOK2_PDF_VAULT_URL" class="btn-download">Download PDF Manual</a>
             </li>
         </ul>
 
-        <!-- Cross-selling Book 3 onto the download page of Book 2 -->
-        <div class="cross-sell-banner">
-            <strong>💰 Next Step Challenge: Cut the Corporate Income Cord.</strong>
-            <p>Now that your land and power are handling themselves for free, fund your monthly base essentials without a standard job. Secure <em>The $1k Homestead Strategy</em>.</p>
-            <a href="homestead-offer.html">View the Low-Labor Income Strategy &rarr;</a>
+        <div id="block-s2" class="upsell-component">
+            <strong>🔥 UPGRADE UNLOCKED: Interactive Solar Sizer & Load Calculator</strong>
+            <p>Your off-grid consumption calculator dashboard is active:</p>
+            <a href="YOUR_GOOGLE_SHEETS_SOLAR_SIZER_LINK" class="btn-download" target="_blank">Open Google Sheets Sizer</a>
         </div>
     </div>
 
-    <!-- MODULE 3: $1K HOMESTEAD (ClickBank Item ID: 3) -->
-    <div id="item-3" class="download-box">
+
+    <div id="block-b3" class="asset-section">
         <h2>🔓 UNLOCKED: Book 3 - The $1k Homestead Strategy</h2>
         <p>Your access links for the asynchronous off-grid income ledger are active:</p>
         <ul>
             <li>
                 <strong>The Core Blueprint:</strong> The $1k Homestead Strategy Ledger (PDF)<br>
-                <a href="YOUR_CLICKBANK_VAULT_URL_OR_GITHUB_LINK_HERE" class="btn-download">Download PDF Ledger</a>
-            </li>
-            <li>
-                <strong>The Companion Tool:</strong> Passive Micro-Revenue Project Planner (Google Sheets)<br>
-                <a href="YOUR_GOOGLE_SHEETS_SHARE_LINK_HERE" class="btn-download" target="_blank">Access Interactive Planner</a>
+                <a href="YOUR_BOOK3_PDF_VAULT_URL" class="btn-download">Download PDF Ledger</a>
             </li>
         </ul>
+
+        <div id="block-s3" class="upsell-component">
+            <strong>🔥 UPGRADE UNLOCKED: Passive Micro-Revenue Project Planner</strong>
+            <p>Your custom timeline and baseline calculation engine dashboard is active:</p>
+            <a href="YOUR_GOOGLE_SHEETS_PROJECT_PLANNER_LINK" class="btn-download" target="_blank">Open Google Sheets Planner</a>
+        </div>
     </div>
 
-    <!-- FALLBACK ERROR BOX (Shows only if a user manually navigates here without a receipt parameter) -->
+
     <div id="error-box" class="error-box">
-        <h3 style="color: #ff0000; margin-top: 0;">No Active Purchase Verified</h3>
-        <p>This secure deployment page requires an active ClickBank transaction parameter to open your downloads.</p>
-        <p>If you recently purchased an asset and reached this screen in error, please check your email for your direct receipt download link or contact customer support.</p>
+        <h3 style="color: #ff0000; margin-top: 0;">No Active Purchases Found</h3>
+        <p>This secure deployment page requires active ClickBank transaction parameters to display files.</p>
+        <p>If you recently finalized an order and reached this screen in error, check your email for a direct receipt download link or contact support.</p>
     </div>
 
-    <div id="land-spreadsheet-box" style="display: none; margin-top: 15px; border-top: 1px solid #000; padding-top: 15px;">
-    <strong>🔥 BONUS UNLOCKED: The Interactive Land Evaluation Matrix</strong><br>
-    <a href="YOUR_GOOGLE_SHEETS_LINK" class="btn-download" target="_blank">Open Google Sheets Dashboard</a>
-</div>
-
-<script>
-    (function() {
-        // Parse the URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const tier = urlParams.get('tier'); // Looks for ?tier=1, 2, or 3
-        
-        if (tier) {
-            // Hide the error box since a valid tier parameter exists
-            document.getElementById('error-box').style.display = 'none';
+    <script>
+        (function() {
+            // Instantiate URL parameter listener
+            const urlParams = new URLSearchParams(window.location.search);
             
-            // Tier 1: Unlocks Book 1 only
-            if (tier === '1') {
-                document.getElementById('item-1').style.display = 'block';
+            // Map parameters to look for specific asset flags
+            const assets = {
+                'b1': urlParams.get('b1') === 'true', // Book 1
+                's1': urlParams.get('s1') === 'true', // Spreadsheet 1
+                'b2': urlParams.get('b2') === 'true', // Book 2
+                's2': urlParams.get('s2') === 'true', // Spreadsheet 2
+                'b3': urlParams.get('b3') === 'true', // Book 3
+                's3': urlParams.get('s3') === 'true'  // Spreadsheet 3
+            };
+            
+            let purchaseValidated = false;
+            
+            // Loop through our asset states to parse the UI visibility layout
+            Object.keys(assets).forEach(key => {
+                if (assets[key]) {
+                    purchaseValidated = true; // Flag that at least one product is present
+                    
+                    if (key.startsWith('b')) {
+                        // If it's a main book, reveal its whole outer block container
+                        document.getElementById('block-' + key).style.display = 'block';
+                    } else if (key.startsWith('s')) {
+                        // If it's a spreadsheet upgrade, reveal its specific nested block
+                        document.getElementById('block-' + key).style.display = 'block';
+                    }
+                }
+            });
+            
+            // Turn off warning panel if user has verified access parameters
+            if (purchaseValidated) {
+                document.getElementById('error-box').style.display = 'none';
             }
-            // Tier 2: Unlocks Book 1 AND Book 2
-            else if (tier === '2') {
-                document.getElementById('item-1').style.display = 'block';
-                document.getElementById('item-2').style.display = 'block';
-            }
-            // Tier 3: Unlocks Book 1, Book 2, AND Book 3
-            else if (tier === '3') {
-                document.getElementById('item-1').style.display = 'block';
-                document.getElementById('item-2').style.display = 'block';
-                document.getElementById('item-3').style.display = 'block';
-            }
-        }
-    })();
-</script>
+        })();
+    </script>
 
 </body>
 </html>
