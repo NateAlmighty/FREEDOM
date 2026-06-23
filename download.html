@@ -148,20 +148,28 @@
 
 <script>
     (function() {
+        // Parse the URL parameters
         const urlParams = new URLSearchParams(window.location.search);
-        const itemId = urlParams.get('item');
-        const hasUpsell = urlParams.get('upsell'); // Looks for '&upsell=true'
+        const tier = urlParams.get('tier'); // Looks for ?tier=1, 2, or 3
         
-        if (itemId) {
-            const targetModule = document.getElementById('item-' + itemId);
-            if (targetModule) {
-                document.getElementById('error-box').style.display = 'none';
-                targetModule.style.display = 'block';
-                
-                // If they bought Book 1 AND accepted the one-click upsell, reveal the sheet link
-                if (itemId === '1' && hasUpsell === 'true') {
-                    document.getElementById('land-spreadsheet-box').style.display = 'block';
-                }
+        if (tier) {
+            // Hide the error box since a valid tier parameter exists
+            document.getElementById('error-box').style.display = 'none';
+            
+            // Tier 1: Unlocks Book 1 only
+            if (tier === '1') {
+                document.getElementById('item-1').style.display = 'block';
+            }
+            // Tier 2: Unlocks Book 1 AND Book 2
+            else if (tier === '2') {
+                document.getElementById('item-1').style.display = 'block';
+                document.getElementById('item-2').style.display = 'block';
+            }
+            // Tier 3: Unlocks Book 1, Book 2, AND Book 3
+            else if (tier === '3') {
+                document.getElementById('item-1').style.display = 'block';
+                document.getElementById('item-2').style.display = 'block';
+                document.getElementById('item-3').style.display = 'block';
             }
         }
     })();
