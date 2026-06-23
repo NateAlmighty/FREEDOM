@@ -141,27 +141,31 @@
         <p>If you recently purchased an asset and reached this screen in error, please check your email for your direct receipt download link or contact customer support.</p>
     </div>
 
-    <script>
-        // Simple JavaScript execution to parse ClickBank URL parameters
-        (function() {
-            // Get the parameters from the URL address string
-            const urlParams = new URLSearchParams(window.location.search);
-            const itemId = urlParams.get('item'); // Looks for '?item=X'
-            
-            // Check if an item parameter actually exists
-            if (itemId) {
-                // Find the HTML container that matches the Item ID (e.g., "item-1")
-                const targetModule = document.getElementById('item-' + itemId);
+    <div id="land-spreadsheet-box" style="display: none; margin-top: 15px; border-top: 1px solid #000; padding-top: 15px;">
+    <strong>🔥 BONUS UNLOCKED: The Interactive Land Evaluation Matrix</strong><br>
+    <a href="YOUR_GOOGLE_SHEETS_LINK" class="btn-download" target="_blank">Open Google Sheets Dashboard</a>
+</div>
+
+<script>
+    (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemId = urlParams.get('item');
+        const hasUpsell = urlParams.get('upsell'); // Looks for '&upsell=true'
+        
+        if (itemId) {
+            const targetModule = document.getElementById('item-' + itemId);
+            if (targetModule) {
+                document.getElementById('error-box').style.display = 'none';
+                targetModule.style.display = 'block';
                 
-                if (targetModule) {
-                    // Hide the warning box since a product was validated
-                    document.getElementById('error-box').style.display = 'none';
-                    // Display the verified purchase container
-                    targetModule.style.display = 'block';
+                // If they bought Book 1 AND accepted the one-click upsell, reveal the sheet link
+                if (itemId === '1' && hasUpsell === 'true') {
+                    document.getElementById('land-spreadsheet-box').style.display = 'block';
                 }
             }
-        })();
-    </script>
+        }
+    })();
+</script>
 
 </body>
 </html>
