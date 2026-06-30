@@ -33,7 +33,6 @@
         li { margin-bottom: 10px; }
         hr { border: 0; border-top: 1px dashed #000; margin: 30px 0; }
         
-        /* Containers hidden by default, revealed dynamically by JS */
         .asset-section {
             display: none;
             border: 2px solid #000;
@@ -79,7 +78,7 @@
     <hr>
 
     <div id="block-b1" class="asset-section">
-        <h2>🔓 UNLOCKED: Book 1 - Cheap Dirt Ecosystem</h2>
+        <h2>🔓 UNLOCKED: Cheap Dirt Ecosystem</h2>
         <p>Your access links for the land sourcing protocol are active:</p>
         <ul>
             <li>
@@ -96,42 +95,6 @@
     </div>
 
 
-    <div id="block-b2" class="asset-section">
-        <h2>🔓 UNLOCKED: Book 2 - Zero-Bill Power System</h2>
-        <p>Your access links for the solar infrastructure installation manual are active:</p>
-        <ul>
-            <li>
-                <strong>The Core Blueprint:</strong> The Zero-Bill Power Setup Manual (PDF)<br>
-                <a href="YOUR_BOOK2_PDF_VAULT_URL" class="btn-download">Download PDF Manual</a>
-            </li>
-        </ul>
-
-        <div id="block-s2" class="upsell-component">
-            <strong>🔥 UPGRADE UNLOCKED: Interactive Solar Sizer & Load Calculator</strong>
-            <p>Your off-grid consumption calculator dashboard is active:</p>
-            <a href="YOUR_GOOGLE_SHEETS_SOLAR_SIZER_LINK" class="btn-download" target="_blank">Open Google Sheets Sizer</a>
-        </div>
-    </div>
-
-
-    <div id="block-b3" class="asset-section">
-        <h2>🔓 UNLOCKED: Book 3 - The $1k Homestead Strategy</h2>
-        <p>Your access links for the asynchronous off-grid income ledger are active:</p>
-        <ul>
-            <li>
-                <strong>The Core Blueprint:</strong> The $1k Homestead Strategy Ledger (PDF)<br>
-                <a href="YOUR_BOOK3_PDF_VAULT_URL" class="btn-download">Download PDF Ledger</a>
-            </li>
-        </ul>
-
-        <div id="block-s3" class="upsell-component">
-            <strong>🔥 UPGRADE UNLOCKED: Passive Micro-Revenue Project Planner</strong>
-            <p>Your custom timeline and baseline calculation engine dashboard is active:</p>
-            <a href="YOUR_GOOGLE_SHEETS_PROJECT_PLANNER_LINK" class="btn-download" target="_blank">Open Google Sheets Planner</a>
-        </div>
-    </div>
-
-
     <div id="error-box" class="error-box">
         <h3 style="color: #ff0000; margin-top: 0;">No Active Purchases Found</h3>
         <p>This secure deployment page requires active ClickBank transaction parameters to display files.</p>
@@ -140,42 +103,30 @@
 
     <script>
         (function() {
-            // Instantiate URL parameter listener
             const urlParams = new URLSearchParams(window.location.search);
             
-            // Map parameters to look for specific asset flags
-            const assets = {
-                'b1': urlParams.get('b1') === 'true', // Book 1
-                's1': urlParams.get('s1') === 'true', // Spreadsheet 1
-                'b2': urlParams.get('b2') === 'true', // Book 2
-                's2': urlParams.get('s2') === 'true', // Spreadsheet 2
-                'b3': urlParams.get('b3') === 'true', // Book 3
-                's3': urlParams.get('s3') === 'true'  // Spreadsheet 3
-            };
+            // Check specifically for Book 1 and Upsell 1 flags
+            const hasBook = urlParams.get('b1') === 'true';
+            const hasUpsell = urlParams.get('s1') === 'true';
             
             let purchaseValidated = false;
             
-            // Loop through our asset states to parse the UI visibility layout
-            Object.keys(assets).forEach(key => {
-                if (assets[key]) {
-                    purchaseValidated = true; // Flag that at least one product is present
-                    
-                    if (key.startsWith('b')) {
-                        // If it's a main book, reveal its whole outer block container
-                        document.getElementById('block-' + key).style.display = 'block';
-                    } else if (key.startsWith('s')) {
-                        // If it's a spreadsheet upgrade, reveal its specific nested block
-                        document.getElementById('block-' + key).style.display = 'block';
-                    }
-                }
-            });
+            if (hasBook) {
+                purchaseValidated = true;
+                document.getElementById('block-b1').style.display = 'block';
+            }
             
-            // Turn off warning panel if user has verified access parameters
+            if (hasUpsell) {
+                purchaseValidated = true;
+                document.getElementById('block-s1').style.display = 'block';
+            }
+            
+            // Hide error box if at least one item was validated
             if (purchaseValidated) {
                 document.getElementById('error-box').style.display = 'none';
             }
         })();
     </script>
-
+    
 </body>
 </html>
