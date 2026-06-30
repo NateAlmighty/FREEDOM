@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAIT! Don't Forget Your Ledger</title>
+    <style>
+        body { 
+            font-family: monospace, Courier, sans-serif; 
+            max-width: 680px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: #fff;
+        }
+        h1 { 
+            line-height: 1.2; 
+            font-size: 26px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            border-bottom: 1px dashed #000;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #000;
+            margin: 40px 0;
+        }
+        .meta-info {
+            font-style: italic;
+            background: #eee;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        .cta-box { 
+            border: 2px solid #000; 
+            padding: 30px; 
+            margin: 40px 0; 
+            background: #fafafa; 
+            text-align: center; 
+        }
+        .cta-box p {
+            text-align: center;
+        }
+        .btn { 
+            background: #000; 
+            color: #fff; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-weight: bold; 
+            font-size: 18px;
+            margin-top: 15px;
+            border: 2px solid #000;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+        }
+        .decline-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .decline-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>WAIT! Your Order Is Not Quite Complete...</h1>
+    
+    <p style="font-weight: bold; text-align: center; font-size: 16px;">
+        Stop guessing your profits and tracking sales in a messy notebook. Get the exact tool professional compost sellers use.
+    </p>
+
+    <hr>
+
+    <div class="meta-info">
+        <strong>From:</strong> The Homestead Side-Income Desk<br>
+        <strong>RE:</strong> Automating your bookkeeping and batch tracking.
+    </div>
+
+    <p>Fellow Homesteader,</p>
+
+    <p>You just grabbed <em>The Compost Cash Flow</em>. You know how to make the stuff, and you know how to sell it. But let's be honest: <strong class="highlight">tracking inputs, batches, and sales manually is tedious and error-prone.</strong></p>
+
+    <p>Do you really want to spend hours every week calculating Carbon:Nitrogen ratios by hand? Do you want to guess when your last batch will be ready? Do you want to scramble at tax time trying to remember how much you spent on bags versus how much you sold?</p>
+
+    <p>Most small business owners fail because they neglect their data. They don't know their true profit margins, so they undercharge or overwork themselves.</p>
+
+    <h2>The "Notebook Method" Myth is Dead</h2>
+
+    <p>Everyone tells you to keep simple records. That's fine for a hobby. If you're serious about selling compost, you need a dedicated ledger that handles the specifics of your trade.</p>
+
+    <p>The truth? You can automate all of this with a single, lightweight desktop app designed specifically for compost businesses. It tracks your Greens vs. Browns, predicts decomposition timelines, calculates your exact profit per bag or yard, and even sets aside your tax reserve automatically.</p>
+
+    <h2>Introducing: THE COMPOST CASH FLOW LEDGER (EXE)</h2>
+    <h3><em>A Desktop Application for Serious Compost Sellers (2026 Edition)</em></h3>
+
+    <p>This isn't a generic spreadsheet. This is a <strong>custom-built software tool</strong> that runs offline on your Windows PC, keeping your data private and accessible instantly.</p>
+
+    <p>Inside this application, you’ll find features tailored to your operation:</p>
+
+    <ul>
+        <li><strong>Inputs Tab (C:N Ratio):</strong> Log materials like leaves, grass, and manure. The app helps you estimate C:N ratios so you always maintain the perfect balance for hot composting.</li>
+        <li><strong>Decomposition Tracker:</strong> Create new batches and track their progress. Estimate completion dates based on whether you're using hot or cold methods, so you always know when inventory will be ready to sell.</li>
+        <li><strong>Sales & Pricing Engine:</strong> Record sales by bag or yard. Set custom prices, log expenses per transaction, and see your net profit immediately.</li>
+        <li><strong>Financial Dashboard:</strong> View your total revenue, net profit, and automatic 10% tax reserve. See monthly revenue trends in a clear, visual chart.</li>
+        <li><strong>Data Export:</strong> One-click export to CSV for your accountant or personal records.</li>
+    </ul>
+
+    <h2>"But I'm not tech-savvy."</h2>
+
+    <p>Good. You shouldn't have to be. This app is designed to be as simple as possible. No installation headaches, no internet required, no subscriptions. Just double-click and start logging.</p>
+
+    <p>We’ve built the logic into the software so you don't have to build it in your head. Just enter your data, and the math happens for you.</p>
+
+    <h2>The Cost of Ignorance vs. Knowledge</h2>
+
+    <p>Lost sales records mean lost money. Mismanaged batches mean spoiled product. Tax surprises mean financial stress.</p>
+
+    <p>The price of <em>THE COMPOST CASH FLOW LEDGER</em> is just <strong>$67</strong>.</p>
+
+    <p>That’s less than the cost of ten bags of premium potting soil. In exchange, you get a lifetime license to a tool that saves you hours of administrative work and protects your bottom line.</p>
+
+    <p>When you click the button below, you’ll add this item to your current order. Your download link is generated immediately upon clearance.</p>
+
+    <div class="cta-box">
+        <p><strong>Add The Compost Cash Flow Ledger to your order for $67.</strong></p>
+        <p>Your transaction is 100% secure, encrypted, and backed by ClickBank's ironclad digital asset consumer protection standards.</p>
+        <!-- Replace the '#' below with your ClickBank ONE-TIME-OFFER hoplink -->
+        <a href="#" class="btn">👉 YES! ADD THE LEDGER APP TO MY ORDER FOR $67 👈</a>
+        
+        <!-- Replace the '#' below with your ClickBank DECLINE link -->
+        <a href="#" class="decline-link">No thanks, I prefer tracking my compost business in a messy notebook.</a>
+    </div>
+
+</body>
+</html>
