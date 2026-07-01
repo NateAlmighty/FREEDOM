@@ -69,6 +69,47 @@
             color: #666;
             margin-top: 15px;
         }
+        
+        /* Upsell Section Styles */
+        .upsell-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fffcc8;
+            border: 2px dashed #000;
+        }
+        .upsell-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .upsell-desc {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .btn-upsell {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            border: 1px solid #000;
+            font-size: 14px;
+        }
+        .btn-upsell:hover {
+            background: #fff;
+            color: #000;
+        }
+        .no-thanks {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+            text-decoration: underline;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -80,15 +121,6 @@
         <span class="item-price">$27.00</span>
     </div>
 
-    <!-- Optional: Uncomment if you want to show the upsell as an add-on option here -->
-    <!-- 
-    <div class="item-row">
-        <label style="display:flex; align-items:center; gap:10px;">
-            <input type="checkbox" id="addUpsell"> Add Catchment Designer App (+$67)
-        </label>
-    </div> 
-    -->
-
     <div class="total-row">
         <span>Total:</span>
         <span>$27.00</span>
@@ -96,6 +128,16 @@
 
     <!-- Replace # with your ClickBank hoplink -->
     <a href="#" class="btn-buy">COMPLETE ORDER</a>
+
+    <!-- Upsell Section -->
+    <div class="upsell-container">
+        <div class="upsell-title">Add-On: Catchment System Designer</div>
+        <p class="upsell-desc">
+            Stop guessing your rainwater needs. This desktop tool calculates exact tank sizes, pipe diameters, and first-flush diverter volumes based on your roof area and local rainfall averages. Design a system that meets 100% of your household water requirements.
+        </p>
+        <a href="#UPSELL_HOPLINK_HERE" class="btn-upsell">Yes, Add Catchment Designer (+$67)</a>
+        <span class="no-thanks">No thanks, just process my order.</span>
+    </div>
 
     <div class="secure-note">
         Secured by ClickBank SSL Encryption
