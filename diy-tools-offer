@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DIY Tool Library - Build and Repair Essential Tools</title>
+    <style>
+        body { 
+            font-family: monospace, Courier, sans-serif; 
+            max-width: 680px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            line-height: 1.6; 
+            color: #111; 
+            background-color: #fff;
+        }
+        h1 { 
+            line-height: 1.2; 
+            font-size: 26px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            border-bottom: 1px dashed #000;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #000;
+            margin: 40px 0;
+        }
+        .meta-info {
+            font-style: italic;
+            background: #eee;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        .cta-box { 
+            border: 2px solid #000; 
+            padding: 30px; 
+            margin: 40px 0; 
+            background: #fafafa; 
+            text-align: center; 
+        }
+        .cta-box p {
+            text-align: center;
+        }
+        .btn { 
+            background: #000; 
+            color: #fff; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-weight: bold; 
+            font-size: 18px;
+            margin-top: 15px;
+            border: 2px solid #000;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Stop Buying New Tools.<br>Learn to Build and Repair Your Own from Scrap.</h1>
+    
+    <p style="font-weight: bold; text-align: center; font-size: 16px;">
+        No big budget needed. No fancy shop required. Just scrap metal, some wood, and the exact steps to keep your homestead running.
+    </p>
+
+    <hr>
+
+    <div class="meta-info">
+        <strong>From:</strong> The Homestead Skills Desk<br>
+        <strong>RE:</strong> Turning junk piles into a lifetime supply of working tools.
+    </div>
+
+    <p>Fellow Maker,</p>
+
+    <p>You already know that buying new gear eats into your savings fast. But let's be honest: <strong class="highlight">your shed is probably full of broken tools you do not know how to fix, sitting next to scrap metal you think is useless.</strong></p>
+
+    <p>You have seen videos of people forging blades or carving handles, but you do not know where to start. Is that piece of steel good enough? How do you dry wood so it does not crack? What safety gear do you actually need versus what marketers tell you to buy? And how do you decide if a repair is worth your time?</p>
+
+    <p>Most hardware stores want you to believe everything is disposable. They stop short of teaching you how to become self-reliant with the materials you already have.</p>
+
+    <h2>The "Buy It New" Mindset is Expensive</h2>
+
+    <p>Everyone tells you to invest in quality tools. That is true, but it ignores the reality of homesteading budgets. A high-end hand plane costs more than a month of grocery money for many families. When it breaks, most people toss it.</p>
+
+    <p>The truth? You can build durable, professional-grade tools from scrap wood and reclaimed metal using basic techniques passed down for generations. One hour of focused work in your driveway can save you hundreds of dollars over a lifetime.</p>
+
+    <h2>Introducing: THE DIY TOOL LIBRARY</h2>
+    <h3><em>A Beginner's Guide to Building and Repairing Essential Tools (2026 Edition)</em></h3>
+
+    <p>This is not a dense engineering textbook. This is a <strong>practical workshop manual</strong> for homeowners who want to extend their tool life and build new ones without risking injury or wasting material.</p>
+
+    <p>Inside this guide, you will find the exact steps used by seasoned homesteaders:</p>
+
+    <ul>
+        <li><strong>Part 1: Getting Started Safely:</strong> Learn the five critical safety habits from OSHA guidelines that prevent the vast majority of shop injuries. Know exactly what gear you need before you pick up a hammer.</li>
+        <li><strong>Part 2 & 3: Working with Wood and Metal:</strong> Master the art of selecting straight-grained handle stock, drying it properly to prevent cracking, and identifying usable scrap steel versus rusted junk.</li>
+        <li><strong>Part 4: Build Your Own Tools:</strong> Step-by-step instructions for crafting essential items like mallets, wedges, and simple forged implements from raw materials.</li>
+        <li><strong>Part 5: Repair What You Already Own:</strong> Restore dull edges, remove stubborn rust with household vinegar, re-handle loose axes, and fix cracked wooden grips before they snap.</li>
+        <li><strong>Part 6: Keeping Your Tool Library Going:</strong> Establish a weekly maintenance routine and storage system that keeps your tools sharp and ready for decades.</li>
+    </ul>
+
+    <h2>"But I am not a blacksmith."</h2>
+
+    <p>Good. You should not have to be. The barrier to entry for basic tool repair is incredibly low. The problem is not skill; it is that most people treat broken tools as trash rather than salvageable assets.</p>
+
+    <p>We have consolidated verified, beginner-friendly methods into one document. No fluff. No "buy this $500 forge" upsells. Just the straightforward truths that turn scrap piles into working equipment.</p>
+
+    <h2>The Cost of Ignorance vs. Knowledge</h2>
+
+    <p>Replacing every broken tool costs thousands over a few years. Learning to repair them costs nothing but time. Most shop accidents happen because tools were dull, broken, or used incorrectly. Proper maintenance eliminates those risks entirely.</p>
+
+    <p>The price of <em>THE DIY TOOL LIBRARY</em> is just <strong>$27</strong>.</p>
+
+    <p>That is less than the cost of a single decent hammer. In exchange, you get a repeatable protocol to assess, repair, and build tools that will last your entire homesteading journey.</p>
+
+    <p>When you click the button below, you will be taken to our secure ordering portal managed by ClickBank. Your download links are generated immediately upon clearance.</p>
+
+    <div class="cta-box">
+        <p><strong>Get instant access to The DIY Tool Library for $27.</strong></p>
+        <p>Your transaction is 100% secure, encrypted, and backed by ClickBanks ironclad digital asset consumer protection standards.</p>
+        <!-- Replace the '#' below with your ClickBank hoplink payment URL later -->
+        <a href="#" class="btn">ADD TO CART & DOWNLOAD THE GUIDE FOR $27</a>
+    </div>
+
+</body>
+</html>
